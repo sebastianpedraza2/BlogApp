@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    Cada item del bottom navigation, el id es el del fragmento en el navigation graph
+    Creo un icono para cada item, los iconos van en el res drawable y mejor que sean vectores -->
+    <item
+        android:id="@+id/homeScreenFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/cameraFragment"
+        android:icon="@drawable/ic_baseline_add_a_photo_24"
+        android:title="Add photo" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+
+</menu>
