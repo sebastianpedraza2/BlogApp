@@ -62,7 +62,7 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
                     /**
                      * Resource.Success.data en donde queda la informacion
                      */
-                    binding.progressCircular.visibility = View.GONE
+                    binding.progressCircular.hide()
 
                     /**
                      * Show message if there are no posts
@@ -70,6 +70,7 @@ class HomeScreenFragment : Fragment(R.layout.fragment_home_screen) {
                     binding.noPostLayout.apply {
                         if (result.data.isEmpty()) this.show() else this.hide()
                     }
+                    binding.rvHome.adapter = HomeScreenAdapter(result.data)
 
                 }
                 is Resource.Failure -> {
